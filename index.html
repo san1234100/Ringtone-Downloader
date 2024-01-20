@@ -28,39 +28,65 @@
 </header>
 
 
-<main class="m-5 space-y-4" >
-    <!-- categories -->
-    <section >
-     <h4 class="font-semibold">Categories</h4>
-     <div class="mt-2 flex space-x-4">
-        <div class="w-20 h-20 bg-gray-400 rounded"></div>
-        <div class="w-20 h-20 bg-gray-400 rounded"></div>
-        <div class="w-20 h-20 bg-gray-400 rounded"></div>
-        <div class="w-20 h-20 bg-gray-400 rounded"></div>
-     </div>
-    </section>
-
-     <!-- Browse by stars -->
-     <section>
-        <h4 class="font-semibold">Browse by Stars</h4>
-        <div class="mt-2 flex space-x-4">
-           <div class="w-20 h-20 bg-gray-400 rounded"></div>
-           <div class="w-20 h-20 bg-gray-400 rounded"></div>
-           <div class="w-20 h-20 bg-gray-400 rounded"></div>
-           <div class="w-20 h-20 bg-gray-400 rounded"></div>
-        </div>
-       </section>
-
-       <!-- Browse by languages -->
-     <section>
-        <h4 class="font-semibold">Browse by languages</h4>
-        <div class="mt-2 flex space-x-4">
-           <div class="w-20 h-20 bg-gray-400 rounded"></div>
-           <div class="w-20 h-20 bg-gray-400 rounded"></div>
-           <div class="w-20 h-20 bg-gray-400 rounded"></div>
-           <div class="w-20 h-20 bg-gray-400 rounded"></div>
-        </div>
-       </section>
+<main class="m-5 space-y-4 sm:space-y-0 flex flex-col sm:flex-row sm:space-x-10" >
+    <!-- filters -->
+    <div class="bg-gray-300 p-4 rounded h-fit max-w-sm">
+    <h4 class="font-semibold">Filter</h4>
+    <div class="mt-2 space-y-3 text-center">
+    <select name="languages" id="languages" class="w-full px-3 py-1 rounded outline-none">
+        <option value="">Select Language</option>
+        <option value="English">English</option>
+        <option value="Tamil">Tamil</option>
+        <option value="Telugu">Telugu</option>
+    </select>   
+    <select name="artists" id="artists" class="w-full py-1 px-3 rounded outline-none">
+        <option value="">Select Artist</option>
+        <option value="Anirudh">Anirudh</option>
+        <option value="GV Prakash">GV Prakash</option>
+        <option value="Harris">Harris jeyaraj</option>
+    </select>   
+    <input type="text" 
+    class="px-4 py-1 rounded w-full outline-none"
+    placeholder="Movie Title">
+    <button class="bg-blue-500 w-full font-medium text-white px-20 py-1 rounded hover:bg-blue-700">Search</button>
+    </div>
+    
+    </div>
+    <!-- contents -->
+    <div class="space-y-3">
+        <!-- categories -->
+        <section >
+         <h4 class="font-semibold">Categories</h4>
+         <div class="mt-2 flex space-x-4">
+            <div class="w-16 h-16 sm:w-28 sm:h-28 bg-gray-400 rounded"></div>
+            <div class="w-16 h-16 sm:w-28 sm:h-28 bg-gray-400 rounded"></div>
+            <div class="w-16 h-16 sm:w-28 sm:h-28 bg-gray-400 rounded"></div>
+            <div class="w-16 h-16 sm:w-28 sm:h-28 bg-gray-400 rounded"></div>
+         </div>
+        </section>
+    
+         <!-- Browse by stars -->
+         <section>
+            <h4 class="font-semibold">Browse by Stars</h4>
+            <div class="mt-2 flex space-x-4">
+                <div class="w-16 h-16 sm:w-28 sm:h-28 bg-gray-400 rounded"></div>
+                <div class="w-16 h-16 sm:w-28 sm:h-28 bg-gray-400 rounded"></div>
+                <div class="w-16 h-16 sm:w-28 sm:h-28 bg-gray-400 rounded"></div>
+                <div class="w-16 h-16 sm:w-28 sm:h-28 bg-gray-400 rounded"></div>
+            </div>
+           </section>
+    
+           <!-- Browse by languages -->
+         <section>
+            <h4 class="font-semibold">Browse by languages</h4>
+            <div class="mt-2 flex space-x-4">
+                <div class="w-16 h-16 sm:w-28 sm:h-28 bg-gray-400 rounded"></div>
+                <div class="w-16 h-16 sm:w-28 sm:h-28 bg-gray-400 rounded"></div>
+                <div class="w-16 h-16 sm:w-28 sm:h-28 bg-gray-400 rounded"></div>
+                <div class="w-16 h-16 sm:w-28 sm:h-28 bg-gray-400 rounded"></div>
+            </div>
+        </section>
+    </div>
 </main>
 </body>
 </html>
